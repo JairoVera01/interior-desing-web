@@ -7,16 +7,16 @@ import Experience from "../components/experience.tsx";
 
 const services = [
   {
-    title: "Project Plan",
-    text: "There are many variations of the passages of lorem Ipsum from available, majority.",
+    title: "Plan de Proyecto",
+    text: "Hay muchas variaciones de los pasajes de lorem Ipsum disponibles, mayoría.",
   },
   {
-    title: "Interior Work",
-    text: "There are many variations of the passages of lorem Ipsum from available, majority.",
+    title: "Trabajo de Interior",
+    text: "Hay muchas variaciones de los pasajes de lorem Ipsum disponibles, mayoría.",
   },
   {
-    title: "Realization",
-    text: "There are many variations of the passages of lorem Ipsum from available, majority.",
+    title: "Realización",
+    text: "Hay muchas variaciones de los pasajes de lorem Ipsum disponibles, mayoría.",
   },
 ];
 
@@ -106,24 +106,24 @@ const experiences = [
 ---
 
 <MainLayout title="Interior Design Home">
-  <!-- Banner -->
+  <!-- Banner Hero Section -->
 
   <section
     class="w-full bg-hero bg-no-repeat bg-cover h-screen lg:min-h-[110vh] px-12 xl:px-0 flex items-center"
   >
     <div class="lg:max-w-[1200px] w-full mx-auto flex flex-col">
       <h1
-        class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-primary-200"
+        class="hero-title text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[70%] text-primary-200"
       >
-        Let Your Home Be Unique
+        Transforma tu espacio
       </h1>
       <p
-        class="text-base md:text-[22px] pb-5 font-jost text-text-gray-200 w-full lg:max-w-[50%]"
+        class="hero-text text-base md:text-[22px] pb-5 font-jost text-text-gray-200 w-full lg:max-w-[55%] leading-8 mb-2 mt-2"
       >
-        There are many variations of the passages of lorem Ipsum
-        fromavailable,variations of the passages.
+        Descubre la magia del diseño interior personalizado, donde cada detalle
+        refleja tu estilo y personalidad.
       </p>
-      <Button text="Get Started" />
+      <Button text="Empieza" />
     </div>
   </section>
 
@@ -147,7 +147,7 @@ const experiences = [
               href="/services"
               class="text-text-gray-200 leading-snug text-lg tracking-tight font-jost font-semibold gap-2 py-4 md:py-8 startCenter"
             >
-              Read More <ArrowSec />
+              Leer más <ArrowSec />
             </a>
           </div>
         );
@@ -166,20 +166,22 @@ const experiences = [
       <h2
         class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
       >
-        We Create The Art Of Stylish Living Stylishly
+        Creamos el arte de vivir con estilo
       </h2>
       <p
         class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]"
       >
-        It is a long established fact that a reader will be distracted by the of
-        readable content of a page when lookings at its layouts the points of
-        using that it has a more-or-less normal.
+        Es un hecho establecido desde hace mucho tiempo que el lector se
+        distraerá con la contenido legible de una página cuando se miran sus
+        diseños, los puntos de usando eso tiene una apariencia más o menos
+        normal.
       </p>
       <div class="flex gap-4 pt-3 items-center">
         <CallIcon />
         <p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
           <span class="text-2xl font-bold leading-9">012345678</span>
-          <span class="text-[22px] leading-8">Call Us Anytime</span>
+          <span class="text-[22px] leading-8">Llámame en cualquier momento</span
+          >
         </p>
       </div>
       <Button text="Get Free Estimate" />
@@ -201,7 +203,7 @@ const experiences = [
       <h2
         class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto"
       >
-        What the People Thinks About Us
+        Lo que la gente piensa de mi
       </h2>
       <div class="flex flex-col gap-8 lg:gap-10 lg:flex-row justify-between">
         {
@@ -250,7 +252,7 @@ const experiences = [
     <h2
       class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-2 mx-auto"
     >
-      Follow Our Projects
+      Sigue mis proyectos
     </h2>
     <p
       class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto"
@@ -300,12 +302,12 @@ const experiences = [
 <style>
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-    display: none;
+    display: none !important;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none !important; /* IE and Edge */
+    scrollbar-width: none !important; /* Firefox */
   }
 </style>

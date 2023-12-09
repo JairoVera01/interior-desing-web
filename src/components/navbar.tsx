@@ -7,10 +7,11 @@ const Navbar = () => {
   const [toggled, setToggled] = useState(false);
   const matches = useMediaQuery("(min-width: 1280px)");
 
-  const linkStyle = "text-xl leading-6 font-jost text-primary-200";
+  const linkStyle =
+    "text-xl leading-6 font-jost text-primary-200 hover:underline ";
 
   return (
-    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-11 flex justify-between items-center">
+    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-8 flex justify-between items-center">
       <a href="/">
         {" "}
         <Logo />
@@ -20,16 +21,16 @@ const Navbar = () => {
       {matches && (
         <nav className="flex flex-row gap-6">
           <a href="/" className={linkStyle}>
-            Home
+            Inicio
           </a>
           <a href="/about" className={linkStyle}>
-            About Us
+            Acerca de mí
           </a>
           <a href="/services" className={linkStyle}>
-            Services
+            Servicios
           </a>
           <a href="/contact" className={linkStyle}>
-            Contact Us
+            Contáctame
           </a>
         </nav>
       )}
@@ -65,16 +66,16 @@ const Navbar = () => {
           className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
         >
           <a href="/" className={linkStyle}>
-            Home
+            Inicio
           </a>
           <a href="/about" className={linkStyle}>
-            About Us
+            Acerca de mí
           </a>
           <a href="/services" className={linkStyle}>
-            Services
+            Servicios
           </a>
           <a href="/contact" className={linkStyle}>
-            Contact Us
+            Contáctame
           </a>
         </motion.nav>
       )}
