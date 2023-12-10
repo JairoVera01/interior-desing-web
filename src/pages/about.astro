@@ -103,9 +103,21 @@ import { Image } from "astro:assets";
       >
         Diseñadora de interiores y luces
       </h2>
-      <div class=" grid-about">
-        <Image src={angela2} alt="" class="img-about rounded-[32px]" />
-        <Image src={angela3} alt="" class="img-about rounded-[32px]" />
+      <div class="grid-about">
+        <Image
+          src={angela2}
+          alt=""
+          width={284}
+          height={433}
+          class="img-about rounded-[32px]"
+        />
+        <Image
+          src={angela3}
+          alt=""
+          class="img-about rounded-[32px]"
+          width={284}
+          height={433}
+        />
         <div
           class="card-about flex flex-col gap-10 w-full justify-between py-[70px] bg-white min-w-[284px] items-center rounded-[32px]"
         >
@@ -140,7 +152,13 @@ import { Image } from "astro:assets";
             >
           </p>
         </div>
-        <Image src={angela1} alt="" class="img-about rounded-[32px]" />
+        <Image
+          src={angela1}
+          alt=""
+          class="img-about rounded-[32px]"
+          height={433}
+          width={284}
+        />
       </div>
     </div>
   </section>
