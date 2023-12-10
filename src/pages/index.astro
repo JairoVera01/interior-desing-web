@@ -4,6 +4,8 @@ import Button from "../components/button.tsx";
 import ArrowSec from "../icons/arrow-sec.tsx";
 import CallIcon from "../icons/call.tsx";
 import Experience from "../components/experience.tsx";
+import { Image } from "astro:assets";
+import aboutImg from "../../public/about-img.png";
 
 const services = [
   {
@@ -188,7 +190,7 @@ const experiences = [
     </div>
 
     <div>
-      <img src="/about-img.png" alt="" />
+      <Image src={aboutImg} alt="" />
     </div>
   </section>
 

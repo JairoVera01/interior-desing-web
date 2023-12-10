@@ -5,6 +5,10 @@ import Facebook from "../icons/facebook.tsx";
 import Twitter from "../icons/twitter.tsx";
 import LinkedIn from "../icons/linkedin.tsx";
 import Instagram from "../icons/instagram.tsx";
+import angela1 from "../../public/angela1.jpg";
+import angela2 from "../../public/angela2.jpg";
+import angela3 from "../../public/angela3.jpg";
+import { Image } from "astro:assets";
 ---
 
 <MainLayout title="Interior Design About Us">
@@ -50,7 +54,7 @@ import Instagram from "../icons/instagram.tsx";
         <h2
           class="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
         >
-          We what we do
+          Hacemos lo que hacemos
         </h2>
         <p
           class="text-base md:text-[22px] lg:max-w-[85%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]"
@@ -76,7 +80,7 @@ import Instagram from "../icons/instagram.tsx";
         <h2
           class="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
         >
-          The End Result
+          El resultado final
         </h2>
         <p
           class="text-base md:text-[22px] lg:max-w-[95%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]"
@@ -97,22 +101,22 @@ import Instagram from "../icons/instagram.tsx";
   >
     <div class="w-full flex flex-col gap-10 lg:max-w-[1200px] mx-auto">
       <h2
-        class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto"
+        class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[100%] pb-9 mx-auto"
       >
-        What the People Thinks About Us
+        Diseñadora de interiores y luces
       </h2>
       <div class="flex w-full overflow-x-scroll gap-4 flex-row no-scrollbar">
-        <img src="/person1.png" alt="" />
-        <img src="/person2.png" alt="" />
+        <Image src={angela2} alt="" class="img-about rounded-[32px]" />
+        <Image src={angela3} alt="" class="img-about rounded-[32px]" />
         <div
           class="flex flex-col gap-10 w-full justify-between py-[70px] px-7 bg-white min-w-[284px] items-center rounded-[32px]"
         >
           <p class="flex flex-col tracking-tight leading-9 text-center">
-            <span class="text-primary-200 text-lg lg:text-[25px] font-dm"
-              >Nattasha Julie</span
+            <span class="text-primary-200 text-lg lg:text-[32px] font-dm mb-3"
+              >Angela Arauco</span
             >
             <span class="text-text-gray-200 text-base lg:text-lg font-jost">
-              Design, Australia</span
+              Lima, Perú</span
             >
           </p>
           <div class="flex gap-6">
@@ -131,14 +135,14 @@ import Instagram from "../icons/instagram.tsx";
           </div>
           <p class="flex flex-col tracking-tight leading-9 text-center">
             <span class="text-text-gray-200 text-base lg:text-lg font-jost">
-              +1 (378) 400-1234</span
+              +51 991 840 081</span
             >
             <span class="text-text-gray-200 text-base lg:text-lg font-jost">
-              julie@email.com</span
+              angelaaraucostudio@email.com</span
             >
           </p>
         </div>
-        <img src="/person3.png" alt="" />
+        <Image src={angela1} alt="" class="img-about rounded-[32px]" />
       </div>
     </div>
   </section>
