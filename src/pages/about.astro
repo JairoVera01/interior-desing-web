@@ -103,18 +103,18 @@ import { Image } from "astro:assets";
       >
         Diseñadora de interiores y luces
       </h2>
-      <div class="grid-about">
+      <div class="grid grid-cols-4 gap-4 md:grid md:grid-cols-1 md:gap-4">
         <Image
           src={angela2}
           alt=""
           width={284}
           height={433}
-          class="img-about rounded-[32px]"
+          class="img-about object-cover rounded-[32px]"
         />
         <Image
           src={angela3}
           alt=""
-          class="img-about rounded-[32px]"
+          class="img-about object-cover rounded-[32px]"
           width={284}
           height={433}
         />
@@ -155,7 +155,7 @@ import { Image } from "astro:assets";
         <Image
           src={angela1}
           alt=""
-          class="img-about rounded-[32px]"
+          class="img-about object-cover rounded-[32px]"
           height={433}
           width={284}
         />
