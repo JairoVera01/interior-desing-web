@@ -107,16 +107,18 @@ import { Image } from "astro:assets";
         <Image
           src={angela2}
           alt=""
-          width={284}
-          height={433}
-          class="img-about object-cover rounded-[32px]"
+          decoding="async"
+          quality={"low"}
+          loading="lazy"
+          class="img-about object-cover rounded-[32px] w-[100%] h-[433px]"
         />
         <Image
           src={angela3}
           alt=""
-          class="img-about object-cover rounded-[32px]"
-          width={284}
-          height={433}
+          decoding="async"
+          quality={"low"}
+          loading="lazy"
+          class="img-about object-cover rounded-[32px] w-[100%] h-[433px]"
         />
         <div
           class="card-about flex flex-col gap-10 w-full justify-between py-[70px] bg-white min-w-[284px] items-center rounded-[32px]"
@@ -155,9 +157,10 @@ import { Image } from "astro:assets";
         <Image
           src={angela1}
           alt=""
-          class="img-about object-cover rounded-[32px]"
-          height={433}
-          width={284}
+          decoding="async"
+          quality={"low"}
+          loading="lazy"
+          class="img-about object-cover rounded-[32px] w-[100%] h-[433px]"
         />
       </div>
     </div>
