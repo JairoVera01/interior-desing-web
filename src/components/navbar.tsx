@@ -11,7 +11,7 @@ const Navbar = () => {
     "text-xl leading-6 font-jost text-primary-200 hover:underline ";
 
   return (
-    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-8 flex justify-between items-center">
+    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-8 flex justify-between items-center ">
       <a href="/">
         {" "}
         <Logo />
@@ -19,7 +19,7 @@ const Navbar = () => {
 
       {/* Nav List for Desktop */}
       {matches && (
-        <nav className="flex flex-row gap-6">
+        <nav className="flex flex-row gap-6 ">
           <a href="/" className={linkStyle}>
             Inicio
           </a>
